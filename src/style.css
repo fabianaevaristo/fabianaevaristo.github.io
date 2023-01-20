@@ -1,0 +1,60 @@
+.contaner{
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .contaner{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contaner{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contaner{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contaner{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contaner{
+        max-width: 1320px;  
+    }
+}
+
+.sob-titulo{
+    margin-bottom: 12px;
+    letter-spacing: .6px;
+    font-size: 14px;
+    color: #495057;
+
+
+}
+
+.titulo{
+
+}
+
+.paragrafo{
+
+}
+
+.habilidades{
+
+}
+
+.artigo{
+
+}
