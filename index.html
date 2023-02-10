@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,28 +23,36 @@
             <li class="button-menu"> esconde o menu </li>
         </ul>
     </header>
-    <section class="banner">
+    <section class="banner contaner">
         <h2 class="sob-titulo"> Olá, me chamo </h2>
         <h1 class=" titulo"> James Smith</h1>
         <h2 class="sob-titulo"> UI/UX designer</h2>
         <div>
             <button class="button"> ME CONTRATE </button>
-            <a class="button
-            -preto" href=" # "> currículo </a>
+            <a class="button button-preto" href=" # "> currículo </a>
         </div>
 
         <ul class="list-icon">
-            <li> face </li>
-            <li> gmail </li>
-            <li> git </li>
-            <li> twitter </li>
+            <li><a href=" # "> <i class="fa-brands fa-facebook-f"></i> </a></li>
+            <li><a href=" # "> <i class="fa-regular fa-envelope"></i> </a></li>
+            <li><a href=" # "> <i class="fa-brands fa-github-alt"></i> </a></li>
+            <li><a href=" # "> <i class="fa-brands fa-twitter"></i> </a></li>
         </ul>
     </section>
 
     <section class="inf">
-        <div> Happy clientes </div>
-        <div> Project Completed </div>
-        <div> Awards Won </div>
+        <div> 
+            <span class="inf-numero"> 124 </span> 
+            <span class="sob-titulo"> clientes </span>
+        </div>
+        <div>
+             <span class="inf-numero"> 456 </span> 
+             <span class="sob-titulo"> Project Completed </span>
+        </div>
+        <div> 
+            <span class="inf-numero"> 789 </span> 
+            <span class="sob-titulo"> Awards Won </span>
+        </div>
     </section>
 
     <section class="contaner">
@@ -70,11 +79,23 @@
     </section>
 
     <section class="contaner">
-        <ul class="disign">
-            <li> UI/UX Design </li>
-            <li> Web Design </li>
-            <li> App Design </li>
-            <li> SEO </li>
+        <ul class="design">
+            <li> 
+                <i class="fa-solid fa-crown"></i> 
+                UI/UX Design
+            </li>
+            <li> 
+                <i class="fa-solid fa-tv"></i>
+                Web Design 
+            </li>
+            <li> 
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                App Design 
+            </li>
+            <li> 
+                <i class="fa-solid fa-chart-column"></i>
+                SEO 
+            </li>
         </ul>
     </section>
 
@@ -87,10 +108,29 @@
 
     <section class="contaner">
         <ul class="list-progress">
-            <li> Photoshop </li>
-            <li> Web Design </li>
-            <li> App Design </li>
-            <li> SEO </li>
+            <li> 
+                Photoshop 
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </li>
+            <li> 
+                Web Design 
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div> 
+            </li>
+            <li> 
+                App Design 
+                <div class="progress">
+                    <div class="progress-bar"  style="width: 90%;"></div>
+                </div>
+            </li>
+            <li> SEO 
+                <div class="progress">
+                    <div class="progress-bar"  style="width: 90%;"></div>
+                </div> 
+            </li>
         </ul>
     </section>
 
@@ -137,8 +177,8 @@
     </section>
 
     <section class="contaner">
-        <div class="artigo">
-            <div class="artigo-body">
+        <div class="artigo box">
+            <div class="box-body">
                 <img src="" alt="">
                 <h1 class="artigo-titulo"> Designe for Everyone </h1>
                 <div class="paragrafo-destaque"> 
@@ -151,8 +191,8 @@
             </div>
         </div>
 
-        <div class="artigo">
-            <div class="artigo-body">
+        <div class="artigo box ">
+            <div class="box-body">
                 <img src="" alt="">
                 <h1 class="artigo-titulo"> Web Layouts </h1>
                 <div class="paragrafo-destaque"> Poster By:
@@ -166,8 +206,8 @@
             </div>  
         </div>
 
-        <div class="artigo">
-            <div class="artigo-body">
+        <div class="artigo box">
+            <div class="box-body">
                 <img src="" alt="">
                 <h1 class="artigo-titulo"> Bootstrap Framework </h1>
                 <div class="paragrafo-destaque"> Poster By:
@@ -201,39 +241,40 @@
 
     <section class="contato">
         <div class="box">
-            <div class="list-contact">
-                <h2 class="sob-titulo"> Available 24/7 </h2>
-                <h1 class=" titulo"> Get In Touch </h1>
-                <form action=""> 
-                    <input type="text">
-                    <input type="text">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button class="button"> Send Message </button>
-                </form>
-            </div>
+            <div class="box-body form">
+                <div class="list-contact">
+                    <h2 class="sob-titulo"> Available 24/7 </h2>
+                    <h1 class=" titulo"> Get In Touch </h1>
+                    <form action=""> 
+                        <input type="text">
+                        <input type="text">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button class="button"> Send Message </button>
+                    </form>
+                </div>
                 <div>
                     <div> 
                         <img src="" alt=""> 
                         <p class="paragrafo"> Location </p>
-                        <p class="paragrafo"> 12345 Fake ST NoWhere AB Country </p>
+                        <p class="paragrafo tdu"> 12345 Fake ST NoWhere AB Country </p>
                         
                     </div>
 
                     <div> 
                         <img src="" alt=""> 
                         <p class="paragrafo"> Phone Number </p>
-                        <p class="paragrafo"> (123) 456-7890 </p>
+                        <p class="paragrafo tdu"> (123) 456-7890 </p>
                     </div>
 
                     <div> 
                         <img src="" alt=""> 
                         <p class="paragrafo"> 
                             Email Address </p>
-                        <p class="paragrafo"> info@teste </p>       
+                        <p class="paragrafo tdu"> info@teste </p>       
                     </div>
                 </div>
                 
-            
+            </div>
         </div>
     </section>
 
