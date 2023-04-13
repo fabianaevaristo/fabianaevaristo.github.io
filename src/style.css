@@ -14,39 +14,8 @@ ul{
 }
 
 .contaner{
-    width: 100%;
     padding: 0 20px;
     margin: 0 auto;
-}
-
-@media (min-width: 576px) {
-    .contaner{
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .contaner{
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .contaner{
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .contaner{
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .contaner{
-        max-width: 1320px;  
-    }
 }
 
 .paragrafo{
@@ -81,7 +50,7 @@ ul{
 
 .habilidades{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 20px;
     text-align: center;
     padding: 5rem 0;
 }
@@ -119,6 +88,7 @@ ul{
 .form{
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .form input, .form textarea{
@@ -192,6 +162,8 @@ ul{
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+    padding-top:40px;
+    padding-bottom:40px ;
 }
 
 .banner .titulo{
@@ -282,12 +254,13 @@ ul{
 }
 
 .design{
+    padding: 0;
     align-items: stretch;
     display: flex;
     gap: 25px;
     font-size: 20px;
     font-weight: 500;
-   
+    flex-direction: column;
 }
 
 .design li:hover{
@@ -320,7 +293,8 @@ ul{
 .list-progress{
     display: grid;
     grid-template-columns: 1fr 1fr;   
-    gap: 30px;     
+    gap: 30px;
+    padding: 0;    
 }
 
 .progress{
@@ -338,7 +312,7 @@ ul{
 
 .list-img{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
 }
 
@@ -365,6 +339,7 @@ ul{
     width: 700px;
     margin: 0 auto;
     display: block;
+    max-width: 100%;
 }
 
 .contato{
@@ -383,10 +358,8 @@ ul{
 
 
 .list-contact{
-    width: 60%;
-    padding: 35px 30px 35px 0; 
-    border-right: 1px solid #dee2e6;  
-    margin-right: 30px; 
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .link{
@@ -485,10 +458,11 @@ ul{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-
+    flex-direction: column;
 }
 
 .baner-img{
+    display: none;
     float: right;
     width: 50%;
 
@@ -503,8 +477,81 @@ ul{
 .display-flex{
     display: flex;
     align-items: start;
+    flex-direction: column;
 }
 
 h1{
     margin-top: 0;
+}
+
+
+@media (min-width: 576px) {
+    .contaner{
+        max-width: 540px;
+    }
+
+    .habilidades {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .contaner{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contaner{
+        max-width: 960px;
+    }
+    .baner-img {
+        display: block;
+    }
+
+    .display-flex{
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    .design{
+        flex-direction: row;
+    }
+
+    .list-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .form{
+        flex-direction: row;
+    }
+
+    .list-contact{
+        width: 60%;
+        padding: 35px 30px 35px 0; 
+        border-right: 1px solid #dee2e6;  
+        margin-right: 30px; 
+    }
+
+    .footer{
+        flex-direction: row;
+    }
+
+    .banner{
+        padding-bottom:0 ;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contaner{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contaner{
+        max-width: 1320px;  
+    }
 }
