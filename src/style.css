@@ -484,6 +484,11 @@ h1{
     margin-top: 0;
 }
 
+.item-img {
+    height: 230px;
+    overflow: hidden;
+}
+
 
 @media (min-width: 576px) {
     .contaner{
