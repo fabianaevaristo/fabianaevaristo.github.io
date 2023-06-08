@@ -133,10 +133,48 @@
 
     <section class="contaner">
         <div class="list-img">
-            <div class="item-img"> <img src="./src/img/p1.PNG" alt=""> </div>
-            <div class="item-img"> <img src="./src/img/p2.jpeg" alt="">  </div>
-            <div class="item-img"> <img src="./src/img/p3.jpeg" alt="">  </div>
-            <div> <img src="" alt="">  </div>
+            <div class="item-img">
+                <img src="./src/img/p1.PNG" alt="">
+                <div class="btn-holder">
+                    <a href="https://fabianaevaristo.github.io/primeiro_site/" target="_blank" class="btn"><i class="fa-solid fa-link"></i></a>
+                    <a href="https://github.com/fabianaevaristo/primeiro_site/tree/main" modal-image="./src/img/p2.jpeg" class="btn"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="item-img">
+                <img src="./src/img/p2.jpeg" alt="">
+                <div class="btn-holder">
+                    <a href="#portifolio" onclick="openModal('./src/img/p2.jpeg')" class="btn"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <a href="https://github.com/fabianaevaristo/costuraApp" target="_blank" class="btn"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="item-img">
+                <img src="./src/img/p3.jpeg" alt="">
+                <div class="btn-holder">
+                    <a href="#portifolio" onclick="openModal('./src/img/p3.jpeg')" class="btn"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <a href="https://github.com/fabianaevaristo/bankApp" target="_blank" class="btn"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="item-img">
+                <img src="./src/img/p4.png" alt="">
+                <div class="btn-holder">
+                    <a href="#portifolio" onclick="openModal('./src/img/p4.png')" class="btn"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <a href="https://github.com/fabianaevaristo/React-gerenciador-usuario" target="_blank" class="btn"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="item-img">
+                <img src="./src/img/p5.png" alt="">
+                <div class="btn-holder">
+                    <a href="#portifolio" onclick="openModal('./src/img/p5.png')" class="btn"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <a href="https://github.com/fabianaevaristo/trips" target="_blank" class="btn"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="item-img">
+                <img src="./src/img/p6.png" alt="">
+                <div class="btn-holder">
+                    <a href="#portifolio" onclick="openModal('./src/img/p6.png')" class="btn"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                    <a href="https://github.com/fabianaevaristo/taskmanager" target="_blank" class="btn"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -263,8 +301,24 @@
             <li><a target="_blank" href="https://www.linkedin.com/in/fabiana-pontes-a36835248/"> <i class="fa-brands fa-linkedin-in"></i> </a></li>
         </ul>
     </footer>
-  <script src="./src/script.js">
-    
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <img src="#" alt="" id="modal-image">
+    </div>
+  <script src="./src/script.js"></script>
+  <script>
+    function openModal(img){
+        console.log('bla')
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-image');
+        modalImage.src = img;
+        modal.style.display = 'block'
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none'
+    }
   </script>
 </body>
 </html>
