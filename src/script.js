@@ -33,7 +33,7 @@ function carrossel(index){
         }
         carrossel(index+1)
         
-    }, 3000);
+    }, 6000);
 }
 
 carrossel(0);
